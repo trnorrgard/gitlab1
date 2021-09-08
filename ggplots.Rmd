@@ -4,9 +4,21 @@ author: "Akhil Havaldar"
 date: "9/8/2021"
 output: html_document
 ---
+Step 1: load data - Akhil
+```{r}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+```
+
 
 ```{r}
-library(readr)
-cereal <- read_csv("~/DS 3001/DS-3001/data/cereal.csv")
+data <- head(diamonds)
+view(data)
+```
+
+Step 2: select aes/labels  - Ronica
+```{r}
+ggplot(data, aes(x=carat, y=depth)) + geom_point()
 ```
 
