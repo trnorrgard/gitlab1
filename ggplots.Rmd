@@ -19,6 +19,9 @@ view(data)
 
 Step 2: select aes/labels  - Ronica
 ```{r}
-ggplot(data, aes(x=carat, y=depth)) + geom_point()
+ggplot(data, aes(x=carat, y=depth)) + geom_point(color="blue")+
+  labs(x="Diamond Carat", y="Depth", title="Diamonds Graph")
+
+
 ```
 
