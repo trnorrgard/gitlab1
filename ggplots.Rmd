@@ -1,0 +1,12 @@
+---
+title: "gitlab1"
+author: "Akhil Havaldar"
+date: "9/8/2021"
+output: html_document
+---
+
+```{r}
+library(readr)
+cereal <- read_csv("~/DS 3001/DS-3001/data/cereal.csv")
+```
+
